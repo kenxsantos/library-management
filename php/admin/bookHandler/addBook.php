@@ -7,14 +7,16 @@ include "../adminServer.php"
   <head>
   <head>
     <?php include "../../imports.php" ?>
+    <link href="../../../css/form.css" rel="stylesheet">
     </head>
   </head>
   <body>
     <?php include "../../navbar.php"; ?>
+    <br>
     <div class="container">
-    <h3>Enter new book details: </h3>
     <form action="addBook.php" method="post">
     <?php include "../../errors.php" ?>
+    <h3><center>Enter new book details </h3>
     <div class="form-group">
         <label for="author">Author:</label>
         <input type="text" name="author" id="author" class="form-control" placeholder="" aria-describedby="helpId">
@@ -49,7 +51,7 @@ include "../adminServer.php"
         </select>  
     </div>
     <div class="form-group">
-     <button type="submit" class="btn btn-primary" name="adminAddBook">Submit</button>
+   <center>  <button type="submit" class="btn btn-primary" name="adminAddBook">Submit</button>
     </div>
     </form>
     </div>

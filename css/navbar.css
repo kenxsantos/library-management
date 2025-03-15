@@ -1,5 +1,8 @@
+body{
+    background-color: #343434;
+}
 .topnav {
-    background-color: #333;
+    background-color: #343434;
     overflow: hidden;
 }
 

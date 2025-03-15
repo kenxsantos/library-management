@@ -8,15 +8,17 @@ include "../adminServer.php";
   <head>
     <head>
     <?php include "../../imports.php" ?>
+    <link href="../../../css/form.css" rel="stylesheet">
     </head>
   </head>
   <body>
     
     <?php include "../../navbar.php"; ?>
+    <br>
     <div class="container">
-    <h3>Enter new user details:</h3>
     <form action="addUser.php" method="post">
     <?php include "../../errors.php"; ?>
+    <h3><center>Enter new user details</h3>
     <div class="form-group">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" class="form-control" placeholder="" aria-describedby="helpId">
@@ -45,7 +47,7 @@ include "../adminServer.php";
           <option value="professor">Professor</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary" name="add_new_user">Submit</button>
+    <center>  <button type="submit" class="btn btn-primary" name="add_new_user">Submit</button>
     </form>
     </div>
   </body>
